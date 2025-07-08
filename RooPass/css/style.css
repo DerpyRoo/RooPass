@@ -1,0 +1,151 @@
+/* Dark Theme Styles */
+
+/* Fabric texture using an image */
+body {
+    background-color: #1e1e2e;
+    background-image: url("woven.png");
+    background-repeat: repeat;
+    background-size: auto;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#title-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#title {
+    font-family: 'Kaushan Script', cursive; /* Stylish cursive font */
+    font-size: 44px; /* Slightly larger for emphasis */
+    font-weight: 700;
+    color: #7da2ff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#mw {
+    width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #282a36;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#JSWarning {
+    display: none;
+    padding: 20px;
+    background-color: #ff5555;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#inputContainer {
+    margin-bottom: 15px;
+}
+
+
+
+.input-div,
+.input-small {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #3a3d4e;
+    border: 1px solid #555;
+    color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-small {
+    width: 40px;
+    text-align: center;
+}
+
+.input-div::placeholder,
+.input-small::placeholder {
+    color: #bbb;
+}
+
+#button-container {
+    margin-top: 15px;
+}
+
+.button {
+    background-color: #7da2ff;
+    color: #1e1e2e;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #5c89ff;
+}
+
+#password-div {
+    display: none;
+    margin-top: 15px;
+}
+
+#password-text {
+    width: 90%;
+    height: 60px;  /* Increased height for 3 lines */
+    background: #1e1e2e;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;  /* Smaller text for better fit */
+    text-align: left;
+    resize: none;
+    overflow-y: auto;  /* Enables scrolling for longer passwords */
+    word-wrap: break-word;  /* Ensures long passwords wrap properly */
+    white-space: pre-wrap;  /* Maintains formatting with word wrapping */
+}
+
+/* Ensure mobile friendliness */
+@media (max-width: 600px) {
+    #password-text {
+        font-size: 12px; /* Slightly smaller font on smaller screens */
+        height: 70px;  /* A little more space for mobile users */
+    }
+}
+
+/* Error Message Container */
+#error-div {
+    display: none; /* Hide by default, shown when an error occurs */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Error message styling */
+#error {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4444;
+    text-align: center;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
